@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: python-app-multi-components-repo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/kkanova-tenant/multi-components-repo/python-app-multi-components-repo@sha256:f3f615a90089e791ab2e0ff1e31b3831616b5a86f189faf753a20dfa167d7324
+        name: my-python
+        resources: {}
+status: {}
