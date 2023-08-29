@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-app-multi-components-repo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/kkanova-tenant/multi-components-repo/nodejs-app-multi-components-repo@sha256:9c9e419f305942e747d07044e0806e0b064c570d252d59e30608d6aeb0057fdc
+        name: container-image
+        resources: {}
+status: {}
